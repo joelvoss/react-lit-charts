@@ -8,10 +8,14 @@
 		<div id="root"></div>
 		<script type="module">
 			import * as React from 'react';
-			import ReactDOM from 'react-dom';
+			import { createRoot } from 'react-dom/client';
 			import pkg from '../package.json';
 
-			const examples = ['carbon-tracker', 'population-pyramid', 'life-expectancy'];
+			const examples = [
+				'carbon-tracker',
+				'population-pyramid',
+				'life-expectancy',
+			];
 
 			function App() {
 				return (
@@ -31,8 +35,9 @@
 				);
 			}
 
-			const root = document.getElementById('root');
-			ReactDOM.render(<App />, root);
+			const container = document.getElementById('root');
+			const root = createRoot(container);
+			root.render(<App />);
 		</script>
 	</body>
 </html>
