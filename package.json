@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/joelvoss/react-lit-charts.git"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "type": "module",
   "source": "src/index.js",
   "main": "dist/react-lit-charts.cjs",
@@ -24,16 +27,16 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "@react-lit/helper": "^0.7.1",
-    "@react-lit/rect": "^0.5.0"
+    "@react-lit/helper": "^0.7.2",
+    "@react-lit/rect": "^0.6.0"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.19.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "jest-axe": "^6.0.0",
-    "jest-environment-jsdom": "^29.0.3",
-    "parcel": "^2.7.0",
+    "@jvdx/core": "^3.5.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "jest-axe": "^8.0.0",
+    "jest-environment-jsdom": "^29.6.2",
+    "parcel": "^2.9.3",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
